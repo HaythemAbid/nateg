@@ -2,6 +2,7 @@ package com.example.nategandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         };
 
     public void FromXml(View view) {
-        texte2.setText("Hello Nateg ");
+
+        Intent myintent = new Intent(MainActivity.this , Second.class);
+        MainActivity.this.startActivity(myintent);
     }
 }
